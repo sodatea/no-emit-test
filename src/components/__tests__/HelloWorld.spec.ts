@@ -9,3 +9,6 @@ describe('HelloWorld', () => {
     expect(wrapper.text()).toContain('Hello Vitest')
   })
 })
+
+let baz: string = 'baz'
+baz = 1

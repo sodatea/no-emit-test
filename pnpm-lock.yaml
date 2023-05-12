@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+patchedDependencies:
+  vue-tsc@1.6.4:
+    hash: oglw5kclihvd7r6kxh4d7ijjxa
+    path: patches/vue-tsc@1.6.4.patch
+
 dependencies:
   pinia:
     specifier: ^2.0.36
@@ -77,7 +82,7 @@ devDependencies:
     version: 0.31.0(jsdom@22.0.0)
   vue-tsc:
     specifier: ^1.6.4
-    version: 1.6.4(typescript@5.0.4)
+    version: 1.6.4(patch_hash=oglw5kclihvd7r6kxh4d7ijjxa)(typescript@5.0.4)
 
 packages:
 
@@ -4359,7 +4364,7 @@ packages:
       he: 1.2.0
     dev: true
 
-  /vue-tsc@1.6.4(typescript@5.0.4):
+  /vue-tsc@1.6.4(patch_hash=oglw5kclihvd7r6kxh4d7ijjxa)(typescript@5.0.4):
     resolution: {integrity: sha512-8rg8S1AhRJ6/WriENQEhyqH5wsxSxuD5iaD+QnkZn2ArZ6evlhqfBAIcVN8mfSyCV9DeLkQXkOSv/MaeJiJPAQ==}
     hasBin: true
     peerDependencies:
@@ -4370,6 +4375,7 @@ packages:
       semver: 7.5.0
       typescript: 5.0.4
     dev: true
+    patched: true
 
   /vue@3.3.1:
     resolution: {integrity: sha512-3Rwy4I5idbPVSDZu6I+fFh6tdDSZbauImCTqLxE7y0LpHtiDvPeY01OI7RkFPbva1nk4hoO0sv/NzosH2h60sg==}

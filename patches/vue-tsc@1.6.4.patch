@@ -1,0 +1,13 @@
+diff --git a/bin/vue-tsc.js b/bin/vue-tsc.js
+index 37929b10d94c784273640b874a7c17d027d85522..04397648c95f0ca365da0b69d2d3809795159a72 100755
+--- a/bin/vue-tsc.js
++++ b/bin/vue-tsc.js
+@@ -25,6 +25,8 @@ fs.readFileSync = (...args) => {
+ 				.filter(file => !file.toLowerCase().includes('__vls_'))
+ 				.map(file => file.replace(/\.vue\.(j|t)sx?$/i, '.vue'))
+ 			) {`);
++
++			tryReplace(`relativeToBuildInfo(file.resolvedPath)`, `relativeToBuildInfo(file.resolvedPath || file.fileName)`);
+ 		}
+ 
+ 		return tsc;
